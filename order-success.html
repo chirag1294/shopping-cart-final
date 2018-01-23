@@ -1,0 +1,279 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <!-- Font awsome link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="shopping.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body class="container">	
+    <br/>
+    <div class="row">
+          <div class="col-sm-12">
+            <div class="jumbotron">
+              <div class="row">
+                <div class="col-sm-6">
+              <h1>Shopping Cart Website</h1> 
+            </div>
+            <div class="col-sm-6 text-right"></div>
+          </div>
+          <div class="col-sm-12">
+            <p>Come See the Softer Side of Online shopping.</p> 
+          </div>
+        </div>
+        </div>
+    </div>
+  	<div class="row">
+      <div class="col-sm-12">
+        <h1 style="text-align:center;">Thank you for order with us.  </h1>
+        <p>You order details are as below : </p>
+      </div>
+    </div>
+    <div class="row">
+      <form id="cart" class="col-sm-12" action="order-success.html" method="post">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th class="text-center">PRODUCT</th>
+              <th class="text-center">QUANITY</th>
+              <th class="text-center">PRICE</th>
+              <th class="text-center">TOTAL</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center">
+                <img src="http://cdn.watchshop.com/profiler/thumb_cache/zoom/99966031_v_1492680918.jpghttp://cdn.watchshop.com/profiler/thumb_cache/zoom/99966031_v_1492680918.jpg" height="100px" width="100px">
+              </td>
+              <td class="text-center">
+                <input class="no-border text-center" type="text" id="small1" readonly value="1" class="readonly" />
+              </td>
+              <td class="text-center">
+                <input class="no-border text-center" type="text" id="price" readonly value="$12.50" class="readonly" />
+              </td>
+              <td class="text-center">
+                <input class="no-border text-center" type="text" id="total1"  readonly="readonly" value="0.00" />
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center">
+                <img src="http://cdn.watchshop.com/profiler/thumb_cache/zoom/99966031_v_1492680918.jpghttp://cdn.watchshop.com/profiler/thumb_cache/zoom/99966031_v_1492680918.jpg" height="100px" width="100px">
+              </td>
+              <td class="text-center">
+                <input class="no-border text-center" type="text" id="small2" readonly value="1" class="readonly" />
+              </td>
+              <td class="text-center">
+                <input class="no-border text-center" type="text" id="price2" readonly value="$12.50" class="readonly" />
+              </td>
+              <td class="text-center">
+                <input class="no-border text-center" type="text" id="total2"  readonly="readonly" value="0.00" />
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td class="text-right"><strong>TOTAL</strong></td>
+              <td class="text-center">
+                <input class="no-border text-center" type="text" id="total3" readonly="readonly" />
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td class="text-right"><strong>TAX(13%)</strong></td>
+              <td class="text-center">
+                <input class="no-border text-center" type="text" id="total4" name="total4" readonly="readonly" />   
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td class="text-right"><strong>GRAND TOTAL</strong></td>
+              <td class="text-center">
+                <input class="no-border text-center" type="text" id="total5" name="total5" readonly="readonly" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </div>
+    
+
+
+<!--
+    <div class="row" style="text-align:center;width:0 auto;">
+      <div class="col-sm-3" style="border:2px solid pink;margin-top:50px;">
+	      <p style="font-weight: bold;">PRODUCT</p>
+	    </div>
+      <div class="col-sm-3" style="border:2px solid pink;margin-top:50px;">
+        <p style="font-weight: bold;">QUANITY</p>
+      </div>
+      <div class="col-sm-3" style="border:2px solid pink;margin-top:50px;">
+        <p style="font-weight: bold;">PRICE</p>
+      </div>
+      <div class="col-sm-3" style="border:2px solid pink;margin-top:50px;">
+        <p style="font-weight: bold;">TOTAL </p>
+      </div>
+      <div class="col-sm-3" style="border-bottom: 0.5px solid gray;">
+        <img src="https://sc02.alicdn.com/kf/HTB1ZKSrPFXXXXXsXpXXq6xXFXXXQ/School-And-College-Bags-School-Bagpack.jpg" height="100px" width="100px">
+      </div>
+	    <div class="col-sm-3" style="margin-top: 30PX;border-bottom: 0.5px solid gray;">
+        <div class="product">	      
+          <form>
+            <select id="small1" onchange="updateOrder1();" style="border-bottom: 0.5px solid gray;">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+          </form> 
+        </div>      
+      </div>
+      <div class="col-sm-3" style=" margin-top: 30PX;border-bottom: 0.5px solid gray;">
+        <tbody>
+          <tr>
+            <td>
+              <input type="text" id="price" readonly value="$ 12.50" class="readonly" style="margin-bottom:0 auto;" />
+            </td>
+          </tr>
+        </tbody>
+      </div>
+       <div class="col-sm-3" style=" margin-top: 30PX;">
+          <input type="text" id="total1"  readonly="readonly" style="margin-left: 20px;margin-top: 0px;margin-bottom: 10px;" value="0.00" />   
+       </div>
+       <div class="col-sm-3" >
+         <img src="https://sc02.alicdn.com/kf/HTB1ZKSrPFXXXXXsXpXXq6xXFXXXQ/School-And-College-Bags-School-Bagpack.jpg" height="100px" width="100px" >
+       </div>
+        <div class="col-sm-3" style="margin-top: 30PX;border-bottom: 0.5px solid gray;">
+            <div class="product">       
+               <form>
+                <select id="small2" onchange="updateOrder2();">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </form> 
+           </div>      
+       </div>
+        <div class="col-sm-3" style=" margin-top: 30PX;border-bottom: 0.5px solid gray;">
+         <tbody>
+            <tr>
+             
+               <td>
+                   <input type="text" id="price2" readonly value="$ 12.50" class="readonly" style="margin-bottom:0 auto;" />
+               </td>
+
+            </tr>
+          </tbody>
+       </div>   
+       <div class="col-sm-3" style=" margin-top: 30PX;">
+          <input type="text" id="total2" readonly="readonly" style="margin-left: 20px;margin-top: 0px;margin-bottom: 10px;" value="0.00" />   
+       </div>   
+
+  </div>
+	</div>        
+ 
+  <div class="row" >
+      
+           <div class="col-sm-3" " >
+                         
+           </div>
+
+           <div class="col-sm-3" " >
+                            
+           </div>
+           
+           <div class="col-sm-3" style="text-align:center;">        
+                  <p style="font-weight: bold;margin-top: 10px;">TOTAL</p> 
+           </div>
+            <div class="col-sm-3" >        
+               <input type="text" id="total3" readonly="readonly" style="margin-left: 80px;margin-top: 10px;margin-bottom: 10px;"/>   
+           </div>
+   </div>  
+
+   <div class="row"  >
+      
+           <div class="col-sm-4" >
+                         
+           </div>
+
+           <div class="col-sm-4" style="text-align: right;" >
+               <p style="font-weight: bold;margin-top: 10px;">TAX(13%) </p>               
+           </div>
+           
+           <div class="col-sm-4" >        
+               <input type="text" id="total4" name="total4" readonly="readonly" style="margin-left:200px;margin-top: 10px;"/>   
+           </div>
+   </div> 
+   <div class="row">
+      
+           <div class="col-sm-3" >
+                         
+           </div>
+            <div class="col-sm-3" >
+                         
+           </div>
+
+           <div class="col-sm-3" style="text-align: right;" >
+               <p style="font-weight: bold;margin-top: 10px;text-align: center;">GRAND TOTAL</p>               
+           </div>
+           
+          <div class="col-sm-3" >        
+               <input type="text" id="total5" name="total5" readonly="readonly" style="margin-left: 85px;margin-top: 10px;margin-bottom: 10px;"/>   
+           </div>
+   </div>    
+    <div class="row">
+      
+           <div class="col-sm-3" >
+             <label>Name</label>
+                      <input type="text" id="Name" name="Name" readonly="readonly" style="margin-left: 85px;margin-top: 10px;margin-bottom: 10px;"/>      
+           </div>
+            <div class="col-sm-3" >
+                  <label>Email</label>
+                      <input type="text" id="Name" name="Name" readonly="readonly" style="margin-left: 85px;margin-top: 10px;margin-bottom: 10px;"/>   
+                      <button id="emailbutton" class="btn btn-primary">Submit</button>       
+           </div>
+
+           <div class="col-sm-3" style="text-align: right;" >
+                                 
+           </div>
+           
+          <div class="col-sm-3" >        
+              
+           </div>
+
+   </div>                     
+    
+-->	     
+	  
+	  
+
+
+ 
+	
+
+	
+	
+	
+	
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     <script src="addtocartnumber.js"></script> 
+
+
+ </body>
+</html>
+
+
+
+
+
